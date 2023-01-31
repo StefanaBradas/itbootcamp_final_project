@@ -18,11 +18,6 @@ public abstract class BaseTests {
     protected WebDriverWait driverWait;
     protected final String baseUrl = "https://vue-demo.daniel-avellaneda.com/";
 
-    public BaseTests(WebDriver driver, WebDriverWait driverWait) {
-        this.driver = driver;
-        this.driverWait = driverWait;
-    }
-
     //•	baseUrl - url stranice https://vue-demo.daniel-avellaneda.com
     //•	beforeClass - gde se podesava drajver sa implicitnim cekanjem
     // i cekanjem za ucitavanje stranice i kreiraju svi pagevi potrebni za testiranje
