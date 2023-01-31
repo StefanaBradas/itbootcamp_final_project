@@ -18,11 +18,6 @@ public abstract class BaseTests {
     protected WebDriverWait driverWait;
     protected final String baseUrl = "https://vue-demo.daniel-avellaneda.com/";
 
-    //•	baseUrl - url stranice https://vue-demo.daniel-avellaneda.com
-    //•	beforeClass - gde se podesava drajver sa implicitnim cekanjem
-    // i cekanjem za ucitavanje stranice i kreiraju svi pagevi potrebni za testiranje
-    //•	aftterClass - gde se gasi stranica
-    //•	beforeMethod - gde se pre svakog testa ucitava baseUrl stranica
 
     @BeforeClass
     public void beforeClass() {
