@@ -16,6 +16,8 @@ public class HomePage extends BasePage {
     private WebElement logoutButton;
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/header/div/div[3]/a[4]/span")
     private WebElement signUpButton;
+    @FindBy (className = "v-card__title")
+    private WebElement verifyMessage;
 
     public HomePage(WebDriver driver, WebDriverWait driverWait) {
         super(driver, driverWait);
@@ -32,6 +34,10 @@ public class HomePage extends BasePage {
         signUpButton.click();
     }
 
+    public WebElement getVerifyMessage() {
+        return verifyMessage;
+    }
+
     public WebElement getLogoutButton() {
         return logoutButton;
     }
@@ -42,6 +48,7 @@ public class HomePage extends BasePage {
     public void signUp() {
         signUpButton.click();
     }
+
 
 
 
