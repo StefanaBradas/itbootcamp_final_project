@@ -21,10 +21,12 @@ public class SignupPage extends BasePage{
     @FindBy (xpath = "//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div/div[3]/div/div/div/div/div[1]")
     private WebElement errorMessage;
 
+    @FindBy (xpath = "//*[@id=\"app\"]/div[4]/div/div/div[3]/button/span")
+    private WebElement closeButton;
 
-    public WebElement getNameField() {
-        return nameField;
-    }
+
+
+
 
     public WebElement getEmailField() {
         return emailField;
@@ -38,8 +40,8 @@ public class SignupPage extends BasePage{
         return confirmPasswordField;
     }
 
-    public WebElement getSignMeUpButton() {
-        return signMeUpButton;
+    public WebElement getCloseButton() {
+        return closeButton;
     }
 
     public WebElement getErrorMessage() {
@@ -47,9 +49,13 @@ public class SignupPage extends BasePage{
     }
 
     public void signUp (String name, String email, String password, String confirmPassword) {
+        nameField.clear();
         nameField.sendKeys(name);
+        emailField.clear();
         emailField.sendKeys(email);
+        passwordField.clear();
         passwordField.sendKeys(password);
+        confirmPasswordField.clear();
         confirmPasswordField.sendKeys(confirmPassword);
         signMeUpButton.click();
     }
