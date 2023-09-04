@@ -61,7 +61,6 @@ public class SignupPage extends BasePage{
     }
 
 
-
     public SignupPage(WebDriver driver, WebDriverWait driverWait) {
         super(driver, driverWait);
     }

@@ -104,8 +104,7 @@ public class HomePage extends BasePage {
     }
 
     public void goToMyProfile () {
-//        driverWait.until(ExpectedConditions.elementToBeClickable(myProfileButton));   // ZASTO MI SA OVA 2 WAITERA ME RADI??
-//        driverWait.until(ExpectedConditions.visibilityOf(myProfileButton));
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
